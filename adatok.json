@@ -1,0 +1,57 @@
+{
+  "post": [
+    {
+      "id": "1",
+      "title": "Egy szép cím",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor diam, lacinia in varius vel.",
+      "date": "2020-12-19",
+      "user-id": "1",
+      "lajk": 2000
+    },
+    {
+      "id": "2",
+      "title": "Egy még szebb cím",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor diam, lacinia in varius vel.",
+      "date": "2021-03-27",
+      "user-id": "2",
+      "lajk": 1000
+    },
+    {
+      "id": "3",
+      "title": "Ez is szép cím",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor diam, lacinia in varius vel.",
+      "date": "2021-06-21",
+      "user-id": "1",
+      "lajk": 1500
+    },
+    {
+      "id": "4",
+      "title": "Ez cím is szép",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor diam, lacinia in varius vel.",
+      "date": "2021-10-21",
+      "user-id": "3",
+      "lajk": 2500
+    },
+    {
+      "id": "12",
+      "title": "adrfs",
+      "description": "12314qw3aed",
+      "date": "2022-01-01T01:51",
+      "lajk": "100"
+    }
+  ],
+  "user": [
+    {
+      "user-id": "1",
+      "name": "Nagy Valaki"
+    },
+    {
+      "user-id": "2",
+      "name": "Kis Valaki"
+    },
+    {
+      "user-id": "3",
+      "name": "Szabó Valaki"
+    }
+  ]
+}

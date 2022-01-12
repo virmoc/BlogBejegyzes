@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/************navigáció***************/
+nav ul {
+    display: grid;
+    grid-template-columns: 100px 100px auto 100px;
+    grid-gap: 5px;
+    padding: 0px;
+}
+nav ul li {
+    padding: 3px 10px;
+    border: 1px solid lavender;
+    border-radius: 5px;
+    list-style-type: none;
+}
+nav ul li:hover {
+    background: rgb(106, 218, 255);;
+}
+nav ul a {
+    text-decoration: none;
+}
+/***********oldalszerkezet**************/
+body{
+    background-color: rgb(181, 213, 255);
+}
+main {
+    /* min-width: 770px; */
+    margin: auto;
+    background-color:lightcyan;
+    max-width: 1200px;
+}
+article {
+    display: grid;
+    grid-template-columns: 4fr 200px;
+    padding: 15px;
+    gap: 10px;
+}
+ .postok div {
+    border: 1px solid lightskyblue;
+    background-color: rgb(106, 218, 255);
+    border-radius: 5px;
+} 
+/**********postok *******************/
+.postok, .urlap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.post, .urlap {
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+    font-size: 12pt;
+    padding-bottom: 30px;
+}
+.post span {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    border: 1px solid lavender;
+    border-radius: 5px;
+    font-size: 10pt;
+    padding: 3px 5px;
+}
+
+
+
+
+/************JS ben használt osztályok*******************/
+/* .kiemel {
+    background-color: cadetblue;
+    border: 3px solid rgb(28, 55, 56);
+    border-radius: 5px;
+} */
+
+fieldset{
+    background-color: rgb(113, 220, 255);
+    margin-top: 10px;
+    
+}
+legend{
+    background-color:  rgb(152, 215, 255);
+    border-radius: 5%;
+}
+
+
+/************reszponzivitás****************/
+@media screen and (max-width: 770px) {
+    article {
+        grid-template-columns: auto;
+    }
+    .termekek {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .termekek {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilus.css" /> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="Ajax.js"></script>
+    <script src="Task.js"></script>
+    <script src="script.js"></script>
+    <title>Tóth Virág</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Blog</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Bejegyzések</a></li>
+                <li><a href="user.html">User</a></li>
+            </ul>
+        </nav>
+        <aside>
+            <section>
+                <form>
+                    <label for="kereso">Keresés:</label>
+                    <input type="text" id="kereso">
+                </form>
+            </section>
+            <section class="urlap">
+                <fieldset>
+                    <legend>Bejegyzések módosítása új adat feltöltése:</legend>
+                    <label for="postID">Azonosító:</label>
+                    <input type="text" id="postID" name="postID"><br><br>
+                    <label for="postCim">Cím:</label>
+                    <input type="text" id="postCim" name="postCim"><br><br>
+                    <label for="postLeiras">Leírás:</label>
+                    <textarea rows="10" cols="30" id="postLeiras"></textarea><br><br>
+
+                    <label for="postDatum">Dátum:</label>
+                    <input type="datetime-local" id="postDatum" name="postDatum"><br><br>
+                    <label for="postLajk">Lájk:</label>
+                    <input type="text" id="postLajk" name="postLajk"><br><br>
+                    <div>
+                      <input type="button" id="ajaxUj" value="Új adat">
+                      <input type="button" id="ajaxModosit" value="Módosít">
+                    </div>
+
+                    
+                </fieldset>
+                 
+            </section>
+            <section class="sablonhoz">
+                <div class="post">
+                    <h3 class="cim">Lorem ipsum dolor</h3>
+                    <p class="leiras">
+                        sit amet consectetur adipisicing elit. Sit natus nobis, earum aperiam nesciunt incidunt vero omnis rerum necessitatibus, fugiat doloribus cum sequi animi consectetur soluta! Saepe eaque sunt aliquid? Dolorum magni inventore similique enim obcaecati eius
+                        fugit animi, accusantium cum excepturi deserunt amet.
+                    </p>
+                    <h3 class="datum">Lorem ipsum dolor</h3>
+                    <span class="lajk">125</span>
+                    <div>
+                    <input type="button" id="torles" value="Törlés">
+                    <input type="button" id="modosit" value="Módosít">
+                    </div>
+                </div>
+            </section>
+        </aside>
+        <article>
+            <section class="postok">
+                
+
+                    <div class="post">
+                        <h3 class="cim">Lorem ipsum dolor</h3>
+                        <p class="leiras">
+                            sit amet consectetur adipisicing elit. Sit natus nobis, earum aperiam nesciunt incidunt vero omnis rerum necessitatibus, fugiat doloribus cum sequi animi consectetur soluta! Saepe eaque sunt aliquid? Dolorum magni inventore similique enim obcaecati eius
+                            fugit animi, accusantium cum excepturi deserunt amet.
+                        </p>
+                        <h3 class="datum">Lorem ipsum dolor</h3>
+                        <span class="lajk">125</span>
+                        <div>
+                            <button class="torol">Törlés</button>
+                            <button class="modosit">Módosít</button>
+                        <!-- <input type="button" id="torles" value="Törlés">
+                        <input type="button" id="modosit" value="Módosít"> -->
+                        </div>
+                    </div>
+                </section>
+            
+        </article>
+        <footer></footer>
+    </main>
+    
+</body>
+</html>
