@@ -14,12 +14,12 @@ class Task {
 
         this.torlesElem.on("click", () => {
             this.torolTrigger();
-            console.log("módosítás");
         });
 
 
         this.modositElem.on("click", () => {
             this.modositTrigger();
+            console.log("módosítás" + this);
         });
 
     }
@@ -52,7 +52,7 @@ class Task {
     }
 
     modositTrigger() {
-        let esemeny = new CustomEvent("modositas", {
+        let esemeny = new CustomEvent("modosit", {
             detail: this.adat, //ezzel adatokat tudok átadni
         });
         window.dispatchEvent(esemeny); // A főablakhoz adom az eseményt,
